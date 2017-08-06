@@ -102,10 +102,7 @@
       }
     },
     "rules": {
-      "arrow-parens": [
-        "error",
-        "always"
-      ],
+      "arrow-parens": "off",
       "arrow-body-style": [
         2,
         "as-needed"
