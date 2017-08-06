@@ -12,11 +12,39 @@
 import React from 'react';
 
 import SideBar from 'components/SideBar';
+import { InfoForm, WorkForm, EducationForm } from 'components/Forms';
+import FormWrapper from './FormWrapper';
+import Container from './Container';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.nextPage = this.nextPage.bind(this);
+    this.prevPage = this.prevPage.bind(this);
+    this.state = {
+      page: 1,
+    };
+  }
+
+  nextPage() {
+    this.setState({ page: this.state.page + 1 });
+  }
+
+  prevPage() {
+    this.setState({ page: this.state.page - 1 });
+  }
+
   render() {
+    const { page } = this.state;
     return (
-      <SideBar></SideBar>
+      <Container>
+        <SideBar></SideBar>
+        <FormWrapper>
+          {page === 1 && <InfoForm onSubmit={this.nextPage} />}
+          {page === 2 && <WorkForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
+          {page === 3 && <EducationForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
+        </FormWrapper>
+      </Container>
     );
   }
 }

@@ -7,7 +7,7 @@
 import React from 'react';
 
 import Panel from './Panel';
-import SectionBox from '../SectionBox';
+import SectionBox from './components/SectionBox';
 
 class SideBar extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
