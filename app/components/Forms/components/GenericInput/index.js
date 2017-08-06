@@ -25,7 +25,7 @@ GenericInput.propTypes = {
   label: PropTypes.string,
   type: PropTypes.string,
   input: PropTypes.object,
-  onChange: PropTypes.function,
+  onChange: PropTypes.func,
   width: PropTypes.number,
 };
 

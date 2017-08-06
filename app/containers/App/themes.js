@@ -5,6 +5,7 @@ const defaultTheme = {
   lightGray: '#EAE9E8',
   darkGray: '#B4B1AE',
   white: '#FFFFFF',
+  inputBg: '#F1F0F0',
 };
 
 export default defaultTheme;

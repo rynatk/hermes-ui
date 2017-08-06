@@ -30,8 +30,8 @@ class EducationForm extends React.Component { // eslint-disable-line react/prefe
 }
 
 EducationForm.propTypes = {
-  onSubmit: PropTypes.function,
-  prevPage: PropTypes.function,
+  onSubmit: PropTypes.func,
+  prevPage: PropTypes.func,
 };
 
 export default EducationForm;

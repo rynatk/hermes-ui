@@ -29,8 +29,8 @@ class WorkForm extends React.Component { // eslint-disable-line react/prefer-sta
 }
 
 WorkForm.propTypes = {
-  onSubmit: PropTypes.function,
-  prevPage: PropTypes.function,
+  onSubmit: PropTypes.func,
+  prevPage: PropTypes.func,
 };
 
 export default WorkForm;

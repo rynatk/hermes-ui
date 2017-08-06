@@ -47,7 +47,7 @@ function InfoForm(props) {
 }
 
 InfoForm.propTypes = {
-  onSubmit: PropTypes.function,
+  onSubmit: PropTypes.func,
 };
 
 export default reduxForm({
