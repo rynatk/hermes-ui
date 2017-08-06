@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   width: 150px;
   height: 95px;
-  background-color: ${props => props.active ? '#57AAA9' : '#B4B1AE'};
+  background-color: ${props => props.active ? props.theme.primary : (props.formModified ? props.theme.darkGray : props.theme.lightGray)};
   border-radius: 4px;
   margin-top: 25px;
   display: flex;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 
   .fa {
-    color: #FFFFFF;
+    color: ${props => props.formModified ? props.theme.white : props.theme.darkGray};
     display: flex;
     font-size: 24px;
   }

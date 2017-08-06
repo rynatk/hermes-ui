@@ -15,12 +15,12 @@ import Badge from './Badge';
 
 function SectionBox(props) {
   return (
-    <Wrapper active={props.active}>
+    <Wrapper {...props}>
       {props.formModified &&
         <Badge valid={props.valid}><FontAwesome name={props.valid ? 'check' : 'exclamation'} /></Badge>
       }
       <FontAwesome name={props.iconName} />
-      <Label>{props.label}</Label>
+      <Label formModified={props.formModified}>{props.label}</Label>
     </Wrapper>
   );
 }

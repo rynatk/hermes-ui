@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Label = styled.div`
-  color: #FFFFFF;
+  color: ${props => props.formModified ? props.theme.white : props.theme.darkGray};
   margin-top: 10px;
   text-transform: capitalize;
 `;

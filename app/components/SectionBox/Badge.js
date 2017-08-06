@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Badge = styled.div`
   width: 30px;
   height: 30px;
-  background-color: ${props => props.valid ? '#57AAA9' : '#EC6244'};
+  background-color: ${props => props.valid ? props.theme.primary : props.theme.warning};
   border: 2px solid #FFFFFF;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
