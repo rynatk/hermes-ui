@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 
   .fa {
-    color: ${props => props.formModified ? props.theme.white : props.theme.darkGray};
+    color: ${props => props.formModified || props.active ? props.theme.white : props.theme.darkGray};
     display: flex;
     font-size: 24px;
   }

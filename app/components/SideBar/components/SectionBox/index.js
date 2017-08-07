@@ -20,7 +20,7 @@ function SectionBox(props) {
         <Badge valid={props.valid}><FontAwesome name={props.valid ? 'check' : 'exclamation'} /></Badge>
       }
       <FontAwesome name={props.iconName} />
-      <Label formModified={props.formModified}>{props.label}</Label>
+      <Label formModified={props.formModified} active={props.active}>{props.label}</Label>
     </Wrapper>
   );
 }

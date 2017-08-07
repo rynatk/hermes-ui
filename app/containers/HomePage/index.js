@@ -22,7 +22,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     this.nextPage = this.nextPage.bind(this);
     this.prevPage = this.prevPage.bind(this);
     this.state = {
-      page: 1,
+      page: 2,
     };
   }
 
@@ -38,11 +38,11 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     const { page } = this.state;
     return (
       <Container>
-        <SideBar></SideBar>
+        <SideBar activeForm={page}></SideBar>
         <FormWrapper>
-          {page === 1 && <InfoForm onSubmit={this.nextPage} />}
-          {page === 2 && <WorkForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
-          {page === 3 && <EducationForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
+          {page === 2 && <InfoForm onSubmit={this.nextPage} />}
+          {page === 3 && <WorkForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
+          {page === 4 && <EducationForm onSubmit={this.nextPage} prevPage={this.prevPage} />}
         </FormWrapper>
       </Container>
     );
