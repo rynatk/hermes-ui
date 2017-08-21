@@ -39,5 +39,8 @@ EducationForm.propTypes = {
 export default reduxForm({
   form: 'application',
   destroyOnUnmount: false,
+  initialValues: {
+    education: [{}],
+  },
   forceUnregisterOnUnmount: true,
 })(EducationForm);

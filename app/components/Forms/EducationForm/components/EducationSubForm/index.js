@@ -10,7 +10,7 @@ import { Field } from 'redux-form/immutable';
 import PropTypes from 'prop-types';
 
 import FormContainer from './FormContainer';
-import { GenericInput, AddFormButton } from '../../../components/';
+import { GenericInput, AddFormButton, RemoveSubFormButton } from '../../../components/';
 
 
 const EducationSubForm = ({ fields }) => (
@@ -21,6 +21,7 @@ const EducationSubForm = ({ fields }) => (
     />
     {fields.map((name, idx) => (
       <FormContainer key={idx}>
+        <RemoveSubFormButton onClick={() => fields.remove(idx)} />
         <Form.Group>
           <Field name={`${name}.school`} component={GenericInput} label="School" type="text" width={8} />
           <Field name={`${name}.start-date`} component={GenericInput} label="Start Date" type="text" width={4} />

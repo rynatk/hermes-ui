@@ -5,6 +5,7 @@ const FormContainer = styled.div`
   border: 2px solid ${props => props.theme.lightGray};
   border-bottom: none;
   border-radius: 2px;
+  position: relative;
 
   &:last-child {
     border-bottom: 2px solid ${props => props.theme.lightGray};
