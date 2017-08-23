@@ -5,7 +5,7 @@
 */
 
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm } from 'redux-form/immutable';
 import { Button, Divider, Form } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
