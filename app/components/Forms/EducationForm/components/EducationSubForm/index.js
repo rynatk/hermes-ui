@@ -9,7 +9,7 @@ import { Form } from 'semantic-ui-react';
 import { Field } from 'redux-form/immutable';
 import PropTypes from 'prop-types';
 
-import FormContainer from './FormContainer';
+import FormContainer from '../../../FormContainer';
 import { GenericInput, AddFormButton, RemoveSubFormButton } from '../../../components/';
 
 
