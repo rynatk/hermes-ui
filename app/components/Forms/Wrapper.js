@@ -10,6 +10,11 @@ const Wrapper = styled.div`
   label, .button {
   }
 
+  .responsibilities-textarea {
+    margin-left: 0.5em;
+    width: 100%;
+  }
+
   .ui {
     label, button {
       font-family: 'Raleway', sans-serif;
