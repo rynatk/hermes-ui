@@ -10,11 +10,21 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
 
 import SideBar from 'components/SideBar';
 import { InfoForm, WorkForm, EducationForm } from 'components/Forms';
-import FormWrapper from './FormWrapper';
-import Container from './Container';
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+`;
+
+const FormWrapper = styled.section`
+  display: flex;
+  flex: 5;
+  height: 100%;
+`;
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {

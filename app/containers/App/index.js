@@ -1,6 +1,6 @@
 /**
  *
- * App.react.js
+ * App
  *
  * This component is the skeleton around the actual pages, and should only
  * contain code that should be seen on all pages. (e.g. navigation bar)
@@ -12,10 +12,14 @@
  */
 
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
-import Wrapper from './Wrapper';
 import defaultTheme from './themes';
+
+const Wrapper = styled.div`
+  font-family: 'Raleway', sans-serif !important;
+  display: flex;
+`;
 
 export default class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
 
